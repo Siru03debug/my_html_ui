@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Interface Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007BFF;
+    }
+  
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>User Interface Project</h1>
+    <p class="meta">Created by: <strong>Shristy</strong></p>
+    <p><strong>Date:</strong> September 18, 2025</p>
+
+    <h2>Project Description</h2>
+    <p>
+      This project is a simple user interface built using HTML, CSS, and basic JavaScript. 
+      It demonstrates the foundational structure of a web page, styling using CSS, and 
+      dynamic content using JavaScript. The goal is to create a clean and user-friendly interface.
+    </p>
+
+</body>
+</html>
