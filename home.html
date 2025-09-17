@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Yoga Gallery</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome</h1>
+  <div class="gallery">
+    <img src=https://wallpapers.com/images/hd/yoga-pictures-74ah3sooiwfpnvdv.jpg alt="Yoga Pose 1" />
+    <img src="https://images.healthshots.com/healthshots/en/uploads/2022/12/12171842/10-minute-yoga.jpg" alt="Yoga Pose 2" />
+    <img src="https://tse4.explicit.bing.net/th/id/OIP.UKOG0MYCrBioTzVe5sfHRAHaE8?w=1000&h=667&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Yoga Pose 3" />
+    <img src="https://res.cloudinary.com/peloton-cycle/image/fetch/f_auto,c_limit,w_3840,q_90/https://images.ctfassets.net/6ilvqec50fal/1obhTUP3SnocTpxR4DgGbG/087f7f1415d7f70578fc0898beeff4b4/Crow_Pose.jpg" alt="Yoga Pose 4" />
+  </div>
+</body>
+</html>

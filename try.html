@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Try Yoga Gallery</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Try our best yoga classes today</h1>
+  <div class="gallery">
+  <img src="https://i0.wp.com/www.healthfitnessrevolution.com/wp-content/uploads/2015/08/iStock-944619732.jpg?fit=2121,1414&ssl=1" alt="Image 1">
+  <img src="https://inspireyoga.com/wp-content/uploads/2020/08/Slow-Flow-cover.jpg" alt="Image 2">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.NirJB_kEvA1UQva9KIjUfgHaE7?w=1000&h=666&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image 3">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.BNQtSj3A820Bvbn2tt5yNAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Image 4">
+  </div>
+</body>
+</html>

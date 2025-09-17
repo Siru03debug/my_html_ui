@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Demo Project - Full Height Layout</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-image: url('https://images5.alphacoders.com/324/thumb-1920-324987.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    /* Main container fills viewport height */
+    .main-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      height: calc(100vh - 60px);
+      /* leave space for footer */
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      gap: 2rem;
+      background: rgba(255 255 255 / 0.15);
+      border-radius: 16px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    /* Left side: welcome full height */
+    .welcome {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 2rem;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .welcome h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: #e0e0e0cc;
+      max-width: 400px;
+      line-height: 1.4;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .welcome {
+      max-width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .buttons-container {
+      flex: none;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .button {
+      min-width: 120px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    a {
+      color: #ddd;
+      list-style: none;
+      list-style-image: transparent;
+    }
+
+    /* Aside arrow container */
+    .aside-arrow {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: rgba(139, 116, 116, 0.6);
+      border-radius: 15px;
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+
+    .aside-arrow:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Arrow shape using CSS borders */
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px transparent solid;
+      border-left: 16px solid white;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<script>
+  function showMessage() {
+    document.getElementById('message').style.display = 'block';
+  }
+</script>
+
+<body>
+  <div class="main-container">
+    <div class="welcome">
+      <h1>Welcome to Our Platform</h1>
+      <p>Yoga is truly a beautiful practice that embraces and accepts people from all walks of life. It creates a
+        welcoming space where individuals, regardless of their age, background, body type, or ability, can come together
+        to find peace, strength, and balance. Through its inclusive philosophy, yoga encourages self-acceptance and
+        compassion, reminding us that every person’s journey is unique and valuable. This openness not only fosters a
+        sense of community but also empowers each individual to honor their own path with kindness and respect. In this
+        way, yoga stands as a powerful reminder of the importance of acceptance and unity in our diverse world.</p>
+      <div class="aside-arrow" title="Aside Arrow" onclick="showMessage()">
+        <div class="arrow"></div>
+      </div>
+    </div>
+
+    <div class="nav ">
+      <a href="home.html" target="_blank" class="button">Home</a>
+      <a href="try.html" target="_blank" class="button">Try</a>
+      <a href="#best" class="button">Best for You</a>
+      Find best for yourself
+      <p id="message" style="display:none; text-align:center; color:white; font-size:1.5rem; margin-top:2rem;">
+        🧘‍♀️ You are one step closer to inner peace.
+      </p>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <footer>
+    Choose your journey with our yoga health campaign
+  </footer>
+</body>
+
+</html>
